@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "nwr0EWgu7gz56lUKCA0Rp8BBWnW7am8bvkqGjN3lhfU=",
+  "Source": "QureProject",
+  "BasePath": "_content/QureProject",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "QureProject\\wwwroot",
+      "Source": "QureProject",
+      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
+      "BasePath": "_content/QureProject",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\style.css",
+      "SourceId": "QureProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
+      "BasePath": "_content/QureProject",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\QureProject.exe
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\QureProject.dll
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\QureProject.deps.json
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\QureProject.runtimeconfig.json
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\PubTmp\Out\QureProject.pdb
