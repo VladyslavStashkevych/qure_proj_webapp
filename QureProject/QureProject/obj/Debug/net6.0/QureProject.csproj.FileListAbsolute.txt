@@ -22,3 +22,4 @@ D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\De
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Debug\net6.0\ref\QureProject.dll
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Debug\net6.0\QureProject.RazorAssemblyInfo.cache
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Debug\net6.0\QureProject.RazorAssemblyInfo.cs
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Debug\net6.0\QureProject.MvcApplicationPartsAssemblyInfo.cs
