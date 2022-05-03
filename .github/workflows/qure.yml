@@ -35,17 +35,5 @@ jobs:
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: webapp
+        name: .net-app
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: webapp
