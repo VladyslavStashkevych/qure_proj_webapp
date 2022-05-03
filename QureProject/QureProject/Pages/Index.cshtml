@@ -1,56 +1,22 @@
 ﻿@page
 @model QureProject.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Головна сторінка";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<html lang="ua">
 
-<head>
-
-	<title>Головна сторінка</title>
-
-	<link rel="stylesheet" href="~/css/style.css" />
-
-	<meta http-equiv="Content type" charset="utf-8" content="text/html;" />
-
-</head>
-<body>
-	<div id="wrap">
-
-		<div id="header">
+<div id="content">
+	<div class="content">
+		<div id="leftcol">
 			<div class="content">
-				<p>Шапка</p>
+				<p>adding book</p>
 			</div>
 		</div>
-
-		<div id="content">
+		<div id="main">
 			<div class="content">
-				<div id="leftcol">
-					<div class="content">
-						<p>adding book</p>
-					</div>
-				</div>
-				<div id="main">
-					<div class="content">
-						<p>added book</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-        <div class="container">
-            <main role="main" class="pb-3">@RenderBody()</main>
-            <partial name="_CookieConsentPartial" />
-        </div>
-
-		<div id="footer">
-			<div class="content">
-				<p>Підвал</p>
+				<p>added book</p>
 			</div>
 		</div>
 	</div>
-
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html>
+</div>

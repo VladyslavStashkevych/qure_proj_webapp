@@ -124,9 +124,9 @@ body {
 #footer {
     height: 50px;
     background-color: #ddd;
-    position: absolute;
-    bottom: 0;
+    vertical-align: baseline;
     width: 100%;
+    display: flex;
 }
 
 .content {
