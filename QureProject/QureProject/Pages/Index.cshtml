@@ -1,22 +1,49 @@
 ﻿@page
 @model QureProject.Pages.IndexModel
 @{
-    ViewData["Title"] = "Головна сторінка";
-    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home page";
 }
 
+<html lang="ua">
 
-<div id="content">
-	<div class="content">
-		<div id="leftcol">
+<head>
+
+	<title>Головна сторінка</title>
+
+	<link rel="stylesheet" href="~/css/style.css" />
+
+	<meta http-equiv="Content type" charset="utf-8" content="text/html;" />
+
+</head>
+<body>
+	<div id="wrap">
+
+		<div id="header">
 			<div class="content">
-				<p>adding book</p>
+				<p>Шапка</p>
 			</div>
 		</div>
-		<div id="main">
+
+		<div id="content">
 			<div class="content">
-				<p>added book</p>
+				<div id="leftcol">
+					<div class="content">
+						<p>adding book</p>
+					</div>
+				</div>
+				<div id="main">
+					<div class="content">
+						<p>added book</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="content">
+				<p>Підвал</p>
 			</div>
 		</div>
 	</div>
-</div>
+</body>
+</html>
