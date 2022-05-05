@@ -11,7 +11,7 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment()) {
-	throw new NotImplementedException();
+	app.UseHsts();
 }
 
 app.UseCookiePolicy();

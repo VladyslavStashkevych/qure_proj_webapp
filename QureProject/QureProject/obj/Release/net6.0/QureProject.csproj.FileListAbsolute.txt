@@ -233,3 +233,8 @@ D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Re
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\QureProject.MvcApplicationPartsAssemblyInfo.cs
 D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\obj\Release\net6.0\QureProject.csproj.CopyComplete
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\Microsoft.AspNetCore.AzureAppServices.HostingStartup.dll
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\Microsoft.AspNetCore.AzureAppServicesIntegration.dll
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Files\univeersity\PTW\TeamProjects\QureProject\QureProject\QureProject\bin\Release\net6.0\Microsoft.Extensions.Logging.AzureAppServices.dll
