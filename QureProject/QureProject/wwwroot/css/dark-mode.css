@@ -61,31 +61,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------------------------------------*/
 
+body{
+  background-color: #000;
+}
+
 .wrapper{
   min-height: 100%;
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
-  background-color: #F6F5F5;
+  background-color: #424245;
+  transition: 1s;
 }
 
 .container {
   max-width: 1600px;
   padding: 0 104px;
   margin: 0 auto;
+  transition: 1s;
 }
 
 .header {
-  background-color: #EFEFEF;
-  border-bottom: 1px solid #D9D0E3;
+  background-color: #313132;
+  border-bottom: 1px solid #000000;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  transition: 1s;
 }
 .header__row {
   display: flex;
   height: 119px;
   justify-content: space-between;
   align-items: center;
+  transition: 1s;
 }
 
 .header__logo{
@@ -97,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__logotext{
+  color: #F6F5F5;
   padding: 8px;
   font-family: 'Rajdhani';
   font-size: 15px;
@@ -104,49 +113,55 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: 1s;
 }
 
 .header__title {
-  color: #000000;
+  color: #F6F5F5;
   font-family: 'Raleway';
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: 1s;
 }
 
 .header__ntsnbtn {
   margin: 0 78px 0 10px;
   color: #6D6B6B;
+  transition: 1s;
 }
 
 .material-symbols-outlined{
-  background-color: #EFEFEF;
+  background-color: #313132;
   padding-bottom: 4px;
+  transition: 1s;
 }
 
 .material-symbols-outlined:hover{
-  border-radius: 100px;
-  background-color: rgba(109, 107, 107, 0.25);
+  color: #fff;
 }
 
 .content {
   padding: 68px 0;
+  transition: 1s;
 }
 
 .content__row {
   display: flex;
   height: 100%;
   flex-wrap: wrap;
+  transition: 1s;
 }
 
 .content__column_add {
 
   width: 157px;
   height: 253px;
-  background-color: #C4C4C4;
+  background-color: #313132;
   border-radius: 10px;
-  margin: 0 70px 79px 0;: ;
+  margin: 0 70px 79px 0;
+  transition: 1s;
 }
 
 .content__add_logo {
@@ -156,10 +171,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .content__column_b1 {
   margin: 0 70px 35px 0;
+  transition: 1s;
 }
 
 .content__column_b2 {
   margin: 0 35px 35px 0;
+  transition: 1s;
 }
 
 .content__name {
@@ -167,7 +184,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: #000000;
+  color: #EFEFEF;
+  transition: 1s;
 }
 
 .content__autor {
@@ -176,7 +194,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: rgba(0, 0, 0, 0.51);
+  color: #F6F5F5;
+  transition: 1s;
 }
 
 .content__image_b1 {}
