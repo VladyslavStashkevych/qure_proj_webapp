@@ -1,20 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<CookiePolicyOptions>(options => {
-	options.CheckConsentNeeded = context => true;
-	options.MinimumSameSitePolicy = SameSiteMode.Strict;
-});
+// Add services to the container.
 builder.Services.AddRazorPages();
-
-
 
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment()) {
-	throw new NotImplementedException();
-}
-
-app.UseCookiePolicy();
+//// Configure the HTTP request pipeline.
+//if (!app.Environment.IsDevelopment()) {
+//	app.UseExceptionHandler("/Error");
+//}
 app.UseStaticFiles();
 
 app.UseRouting();
