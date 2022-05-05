@@ -19,7 +19,7 @@
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
-            @Html.Partial("_CookieConsentPartial")
+            @{ await Html.RenderPartialAsync("_CookieConsentPartial"); }
         </div>
 
         <footer>
