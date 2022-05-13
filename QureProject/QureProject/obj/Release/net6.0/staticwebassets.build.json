@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GsbF2V8qRh5htz/fG3eOMmUBZTjmaXg3Opd9VTUklXw=",
+  "Hash": "DYt426qUEWwUeg8cXZGUGr0YK0Y3EfzXSZGWUTqhpus=",
   "Source": "QureProject",
   "BasePath": "_content/QureProject",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\ADD\\add.png"
+    },
+    {
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\img\\ADD\\add.svg",
+      "SourceId": "QureProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
+      "BasePath": "_content/QureProject",
+      "RelativePath": "img/ADD/add.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ADD\\add.svg"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\img\\ADD\\add-dark.png",
@@ -204,23 +221,6 @@
       "OriginalItemSpec": "wwwroot\\img\\dark-mode\\Vector.jpg"
     },
     {
-      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\cookie.js",
-      "SourceId": "QureProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
-      "BasePath": "_content/QureProject",
-      "RelativePath": "js/cookie.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\cookie.js"
-    },
-    {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\main.js",
       "SourceId": "QureProject",
       "SourceType": "Discovered",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\popup.js",
+      "SourceId": "QureProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
+      "BasePath": "_content/QureProject",
+      "RelativePath": "js/popup.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popup.js"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
