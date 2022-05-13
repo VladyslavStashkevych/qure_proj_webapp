@@ -11,8 +11,6 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-
-
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment()) {

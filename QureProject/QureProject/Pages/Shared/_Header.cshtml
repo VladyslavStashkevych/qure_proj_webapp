@@ -17,39 +17,10 @@
 			</div>
 			<div class="header__title">qure</div>
             <div id="cookies" style="all:initial">
-			    <button type="button" class="header__ntsnbtn" id="switchMod" data-dismiss="alert" data-cookie-string="@theme">
+			    <button class="header__ntsnbtn" id="switchMod" data-dismiss="alert" data-cookie-string="@theme">
 				    <span class="material-symbols-outlined">dark_mode</span>
 			    </button>
             </div>
 		</div>
 	</div>
-    <script>
-        let button = document.getElementById("cookies");
-        button.onclick = function () {
-
-            let value = "";
-            let name = "theme" + "=";
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let ca = decodedCookie.split(';');
-            for(let i = 0; i <ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                  c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                  value = c.substring(name.length, c.length);
-                }
-            }
-
-            const d = new Date();
-            d.setTime(d.getTime() + (365*24*60*60*1000));
-            let expires = "expires="+ d.toUTCString();
-            if (value == "dark") {
-                document.cookie = "theme" + "=" + "light" + ";" + expires + ";path=/";
-            } else {
-                document.cookie = "theme" + "=" + "dark" + ";" + expires + ";path=/";
-            }
-
-        }
-    </script>
 </header>
