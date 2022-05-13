@@ -1,3 +1,8 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.ObjectModel;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace QureProject.Pages {
@@ -9,7 +14,10 @@ namespace QureProject.Pages {
 		}
 
 		public void OnGet() {
-
+			const string cookieName = "theme";
+			if (Request.Cookies[cookieName] is null) {
+				Response.Cookies.Append(cookieName, "dark");
+			}
 		}
 	}
 }
