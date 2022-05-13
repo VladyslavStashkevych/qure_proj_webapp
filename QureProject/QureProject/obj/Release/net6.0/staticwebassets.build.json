@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fLGLF9jvu9dbQgovPOmTmmpYITUjKVRqlwKAFpYI4FY=",
+  "Hash": "GsbF2V8qRh5htz/fG3eOMmUBZTjmaXg3Opd9VTUklXw=",
   "Source": "QureProject",
   "BasePath": "_content/QureProject",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\dark-mode\\Vector.jpg"
+    },
+    {
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\cookie.js",
+      "SourceId": "QureProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
+      "BasePath": "_content/QureProject",
+      "RelativePath": "js/cookie.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cookie.js"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\main.js",
