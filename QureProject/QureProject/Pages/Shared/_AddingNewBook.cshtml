@@ -15,11 +15,17 @@
 				</a>
 			<div class="popup__row">
 				<a href="" class="popup__add">
-				<img src="~/img/ADD/add.svg" alt="" class="popup__add_logo">
+                <form method="post">
+                    <label for="file-input">
+                        <img src="~/img/ADD/add.svg" alt="+" class="popup__add_logo"/>
+                    </label>
+
+                    <input type="file" id="file-input"  />
+                </form>
 				</a>
 				<div class="popup__info">
-				<div class="popup__name">Назва книги</div>
-				<div class="popup__autor">Автор книги</div>
+				    <div class="popup__name">Назва книги</div>
+				    <div class="popup__autor">Автор книги</div>
 				</div>
 			</div>
 
