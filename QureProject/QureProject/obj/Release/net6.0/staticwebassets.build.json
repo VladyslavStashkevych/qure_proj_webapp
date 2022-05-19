@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DYt426qUEWwUeg8cXZGUGr0YK0Y3EfzXSZGWUTqhpus=",
+  "Hash": "BLBaumD//dcfiZkZhhpqjU6mow7QnJitHPuA+nu4BXc=",
   "Source": "QureProject",
   "BasePath": "_content/QureProject",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\light-mode.css"
-    },
-    {
-      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\style.css",
-      "SourceId": "QureProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
-      "BasePath": "_content/QureProject",
-      "RelativePath": "css/style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\img\\ADD\\add.png",
