@@ -22,10 +22,10 @@ switchMode.onclick = function () {
     }
 
     if (value == "light") {
-        theme.href = "css/dark-mode.css";
+        theme.href = "css/darkmode.css";
         value = "dark";
     } else {
-        theme.href = "css/light-mode.css";
+        theme.href = "css/lightmode.css";
         value = "light";
     }
 
