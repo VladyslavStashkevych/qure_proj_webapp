@@ -293,11 +293,16 @@ body{
   padding: 73px 35px;
   background-color: #C4C4C4;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+#file-input {
+    display: none;
 }
 
 .popup__info {
-  flex: 1 1 auto;
-  margin: 19px 75px 98px 17px;
+    flex: 1 1 auto;
+    margin: 19px 75px 98px 17px;
 }
 
 .popup__name {
