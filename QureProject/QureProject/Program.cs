@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
 builder.Services.Configure<CookiePolicyOptions>(options => {
 	options.CheckConsentNeeded = context => true;
 	options.MinimumSameSitePolicy = SameSiteMode.Unspecified;
@@ -8,27 +9,32 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 	options.OnDeleteCookie = cookieContext =>
 		CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
 });
-builder.Services.AddRazorPages();
+
+builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
 
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment()) {
+	app.UseExceptionHandler("/Shared/Error");
+	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 	app.UseHsts();
 }
 
 app.UseCookiePolicy();
+app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseAuthentication();
 
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
 
 
 void CheckSameSite(HttpContext httpContext, CookieOptions options) {

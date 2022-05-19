@@ -290,10 +290,10 @@ body{
 }
 
 .popup__add_logo {
-    padding: 73px 35px;
-    background-color: #C4C4C4;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 73px 35px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #file-input {

@@ -1,27 +1,30 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.ObjectModel;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using QureProjectMVC.Models;
 
-namespace QureProject.Pages {
-	public class IndexModel : PageModel {
-		private readonly ILogger<IndexModel> _logger;
+namespace QureProjectMVC.Controllers {
+	public class HomeController : Controller {
+		private readonly ILogger<HomeController> _logger;
 		private readonly IWebHostEnvironment _environment;
 
-		public IndexModel(ILogger<IndexModel> logger, IWebHostEnvironment environment) {
+		public HomeController(ILogger<HomeController> logger, IWebHostEnvironment environment) {
 			_logger = logger;
 			_environment = environment;
 		}
 
-		public void OnGet() {
+		public IActionResult Index() {
 			const string cookieName = "theme";
 			if (Request.Cookies[cookieName] is null) {
 				Response.Cookies.Append(cookieName, "dark");
 			}
+			return View();
 		}
 
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		public IActionResult Error() {
+			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+		}
 		[BindProperty]
 		public IFormFile Upload { get; set; }
 		public async Task OnPostAsync() {
