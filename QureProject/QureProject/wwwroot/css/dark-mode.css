@@ -297,12 +297,12 @@ body{
 }
 
 #file-input {
-    display: none;
+  display: none;
 }
 
 .popup__info {
-    flex: 1 1 auto;
-    margin: 19px 75px 98px 17px;
+  flex: 1 1 auto;
+  margin: 19px 75px 98px 17px;
 }
 
 .popup__name {
