@@ -12,11 +12,11 @@
 <header class="header">
 	<div class="container">
 		<div class="header__row">
-			<div class="header__logo">
-                <div  class="header__logotext">qr</div>
-			</div>
-			<div class="header__title">@ViewData["Name"]</div>
-            <div id="cookies" style="all:initial">
+			<a asp-controller="Home" asp-action="Index" class="header__close">
+				<span class="material-symbols-outlined">west</span>
+			</a>
+			<div class="header__title_read">@ViewData["Name"]</div>
+			<div id="cookies" style="all:initial">
 			    <button class="header__ntsnbtn" id="switchMod" data-dismiss="alert" data-cookie-string="@theme">
 				    <span class="material-symbols-outlined">dark_mode</span>
 			    </button>
