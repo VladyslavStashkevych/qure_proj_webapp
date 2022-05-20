@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using QureProjectMVC.Models;
+using QureProject.Models;
 
-namespace QureProjectMVC.Controllers {
+namespace QureProject.Controllers {
 	public class HomeController : Controller {
 		private readonly ILogger<HomeController> _logger;
 		private readonly IWebHostEnvironment _environment;
@@ -20,18 +20,26 @@ namespace QureProjectMVC.Controllers {
 			}
 			return View();
 		}
+		public IActionResult ReadMenu() {
+			return View();
+		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error() {
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
+
 		[BindProperty]
 		public IFormFile Upload { get; set; }
-		public async Task OnPostAsync() {
+		[HttpPost]
+		public  IActionResult OnPostAsync() {
+			Redirect("https://artemsadovenko.atlassian.net/jira/software/projects/QUR/boards/2/backlog?selectedIssue=QUR-28");
 			var file = Path.Combine(_environment.ContentRootPath, "uploads", Upload.FileName);
-			using (var fileStream = new FileStream(file, FileMode.Create)) {
-				await Upload.CopyToAsync(fileStream);
-			}
+			//using (var fileStream = new FileStream(file, FileMode.Create)) {
+			//	await Upload.CopyToAsync(fileStream);
+			//}
+			return RedirectToAction("Index");
 		}
+
 	}
 }

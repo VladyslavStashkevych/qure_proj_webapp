@@ -1,4 +1,4 @@
-namespace QureProjectMVC.Models {
+namespace QureProject.Models {
 	public class ErrorViewModel {
 		public string? RequestId { get; set; }
 
