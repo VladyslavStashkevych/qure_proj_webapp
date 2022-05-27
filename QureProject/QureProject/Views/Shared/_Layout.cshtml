@@ -33,7 +33,12 @@
 </head>
 <body>
     <div class="wrapper">
-        @{ await Html.RenderPartialAsync("_Header"); }
+        @{ 
+            if (@ViewData["Name"]== "QURE") 
+                await Html.RenderPartialAsync("_Header"); 
+            else
+                await Html.RenderPartialAsync("_AdditionalHeader");
+         }
         @RenderBody()
         @{ await Html.RenderPartialAsync("_CookieConsentPartial"); }
 	</div>

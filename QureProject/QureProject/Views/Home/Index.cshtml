@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Головна сторінка";
+    ViewData["Name"]  = "QURE";
 }
 
 <div class="content">
@@ -9,14 +10,14 @@
 				<img src="~/img/ADD/add.svg" alt="" class="content__add_logo">
 			</a>
 			<div class="content__column_b1">
-				<a href="" class="content__image_b1">
+				<a asp-controller="Home" asp-action="ReadMenu" class="content__image_b1">
 					<img src="~/img/book_logo/1.png" alt="" class="content__b1_logo">
 				</a>
 				<div class="content__name">Ромео і Джульєтта</div>
 				<div class="content__autor">Вільям Шекспір</div>
 			</div>
 			<div class="content__column_b2">
-				<a href="" class="content__image_b2">
+				<a asp-controller="Home" asp-action="ReadMenu" class="content__image_b2">
 					<img src="~/img/book_logo/2.png" alt="">
 				</a>
 				<div class="content__name">Великий Ґетсбі</div>
