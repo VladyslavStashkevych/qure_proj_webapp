@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BLBaumD//dcfiZkZhhpqjU6mow7QnJitHPuA+nu4BXc=",
+  "Hash": "gWy7Fyv2eNZYErfxS3ZB7h00H7wRkKq3Ny7HANHT2WU=",
   "Source": "QureProject",
   "BasePath": "_content/QureProject",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\dark-mode.css",
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\darkmode.css",
       "SourceId": "QureProject",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
       "BasePath": "_content/QureProject",
-      "RelativePath": "css/dark-mode.css",
+      "RelativePath": "css/darkmode.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,15 +31,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\dark-mode.css"
+      "OriginalItemSpec": "wwwroot\\css\\darkmode.css"
     },
     {
-      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\light-mode.css",
+      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\css\\lightmode.css",
       "SourceId": "QureProject",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
       "BasePath": "_content/QureProject",
-      "RelativePath": "css/light-mode.css",
+      "RelativePath": "css/lightmode.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\light-mode.css"
+      "OriginalItemSpec": "wwwroot\\css\\lightmode.css"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\img\\ADD\\add.png",
