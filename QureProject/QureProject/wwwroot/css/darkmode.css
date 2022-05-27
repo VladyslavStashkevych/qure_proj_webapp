@@ -7,11 +7,11 @@
   border: 0; }
 
 .material-symbols-outlined[data-theme="light"] {
-    display: block;
+    display: none;
 }
 
 .material-symbols-outlined[data-theme="dark"] {
-    display: none;
+    display: block;
 }
 
 *, *:before, *:after {
