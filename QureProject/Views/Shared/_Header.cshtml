@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Microsoft.AspNetCore.Http.Features
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    string? theme;
+    Html.Raw(theme = HttpContextAccessor.HttpContext?.Request.Cookies["theme"]);
+}
+
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="header__logo">
+                <div  class="header__logotext">qr</div>
+			</div>
+			<div class="header__title">@ViewData["Name"]</div>
+            <div id="cookies" style="all:initial">
+			    <button class="header__ntsnbtn" id="switchMod" data-dismiss="alert" data-cookie-string="@theme">
+				    <span class="material-symbols-outlined" data-theme="light">dark_mode</span>
+					<span class="material-symbols-outlined" data-theme="dark">light_mode</span>
+			    </button>
+            </div>
+		</div>
+	</div>
+</header>
