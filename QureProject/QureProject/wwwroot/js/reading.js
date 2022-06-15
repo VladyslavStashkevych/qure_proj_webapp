@@ -15,7 +15,7 @@ let tmp = value.split(' ')
 let lines = []
 let temp = ""
 for (let l of tmp) {
-    if (temp.length + l.length + 1 <= 15)
+    if (temp.length + l.length + 1 <= 10)
         temp += l + " "
     else {
         lines.push(temp)
