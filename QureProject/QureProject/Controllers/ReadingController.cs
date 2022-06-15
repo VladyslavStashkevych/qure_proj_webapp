@@ -9,24 +9,32 @@ namespace WebApplication1.Controllers {
 
 		// GET: ReadingController
 		public ActionResult Index(string id) {
+			BookModel book = new BookModel {
+				Author = "Вільям Шекспір",
+				Name = "Ромео і Джульєтта",
+				Text = @""
+			};
+			book.AddLines(@"fsdgshd");
+			_read = new ReadingModel(book);
+
+			book = new BookModel {
+				Author = "Френсіс Скотт Фіцджеральд",
+				Name = "Великий Ґетсбі",
+				Text = @""
+			};
+			book.Lines = new List<string>();
+			book.AddLines("dd jjkk");
+			_read = new ReadingModel(book);
+				
 			if (id is not null)
 				_read = Reads.AllReads.First(x => x.Id.ToString() == id);
-			else if (_read is null) {
-				BookModel book = new BookModel {
-					Author = "Me",
-					Name = "Gabriela",
-					Text =    @"Gabriela worked for a multinational cumpany as a successful project manager in Brazil and was transferred"
-				};
-				book.AddLines(@"Gabriela worked for a multinational cumpany as a successful project manager in Brazil and was transferred");
-				_read = new ReadingModel(book);
-			}
 			else
 				_read = Reads.AllReads.First();
 
-			const string cookieName = "text";
-			if (Request.Cookies[cookieName] is null) {
-				Response.Cookies.Append(cookieName, _read._book.Text);
-			}
+			//const string cookieName = "text";
+			//if (Request.Cookies[cookieName] is null) {
+			//	Response.Cookies.Append(cookieName, _read._book.Text);
+			//}
 
 			return View();
 		}
