@@ -11,7 +11,7 @@ namespace QureProject.Models {
 			Name = "Untitled";
 			Author = "Me";
 			Lines = new List<string>();
-			Text = "";
+			Text = "ll";
 		}
 
 		public void AddLines(string lines) {
