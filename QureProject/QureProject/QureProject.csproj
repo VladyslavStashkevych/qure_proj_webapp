@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\ReadMenu.cshtml" />
+    <None Include="Views\Reading\Index.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_AdditionalHeader.cshtml" />
     <None Include="Views\Shared\_CookieConsentPartial.cshtml" />

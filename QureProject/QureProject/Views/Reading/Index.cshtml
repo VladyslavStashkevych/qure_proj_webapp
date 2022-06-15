@@ -10,17 +10,18 @@
 	<div class="container">
 		<div class="readmenu__row">
 			<div class="readmenu__text">
-			<div class="readmenu__text_top">top text</div>
-			<div class="readmenu__text_middle">middle text</div>
-			<div class="readmenu__text_bottom">bottom text</div>
+			<div id="prev" class="readmenu__text_top"></div>
+			<div id="curr" class="readmenu__text_middle"></div>
+			<div id="next" class="readmenu__text_bottom"></div>
 		</div>
 		<div class="readmenu__slider">
 			<output for="fader" id="speed">0</output>
-			<input type="range" id="fader" min="0" max="100" value="50" oninput="outputUpdate(value)">
+			<input type="range" id="fader" min="0" max="100" value="0" oninput="outputUpdate(value)">
 		</div>
 		<div class="readmenu__instruction">швидкість тексту</div>
 		</div>
 	</div>
+    
 </div>
 
 <script src="~/js/reading.js"></script>
