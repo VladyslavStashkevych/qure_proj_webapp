@@ -2,14 +2,16 @@
 let prev = document.getElementById("prev")
 let curr = document.getElementById("curr")
 let next = document.getElementById("next")
-//let book_id = document.getElementById("book_id")
-//let bookId = book_id.innerHTML
-//book_id.innerHTML = ""
+let book_id = document.getElementById("book_id")
+let bookId = book_id.innerHTML
+book_id.innerHTML = ""
 let book_text = document.getElementById("book_text")
 value = book_text.innerHTML
 book_text.InnerHTML = ""
 let readingSpeed = 0
+let setZero = true
 var lines = getLines(value)
+let reading = false
 setScreen(lines)
 
 function getLines(val) {
@@ -32,7 +34,7 @@ function setScreen(ls) {
 }
 
 async function outputUpdate(speed) {
-    readingSpeed = (speed * 7) / 100
+    reading = false
     let output = document.querySelector("#speed")
     output.value = speed;
 
@@ -70,11 +72,13 @@ async function outputUpdate(speed) {
     if (output.value > 99) {
         output.style.left = speed * 3.6 - 47 + 'px';
     }
-    await change()
+    reading = true
+    change(speed)
 }
 
-
-async function change() {
+async function change(speed) {
+    readingSpeed = 0
+    readingSpeed = (speed * 7) / 100
     if (typeof (lines[0]) === "undefined") {
         if (next.innerHTML != "" && next.innerHTML != "undefined") {
             prev.innerHTML = curr.innerHTML
@@ -83,13 +87,12 @@ async function change() {
         }
         return;
     }
-    while (typeof (lines[0]) != "undefined" && readingSpeed != 0) {
+    while (typeof (lines[0]) != "undefined" && readingSpeed != 0 && reading) {
         prev.innerHTML = curr.innerHTML
         curr.innerHTML = next.innerHTML
         next.innerHTML = lines[0]
         await sleep(1000 / readingSpeed)
         lines.shift()
-        await change()
     }
 }
 
@@ -98,7 +101,6 @@ function sleep(ms) {
         resolve => setTimeout(resolve, ms)
     );
 }
-
 
 if (bookId == 2) {
     lines = []
