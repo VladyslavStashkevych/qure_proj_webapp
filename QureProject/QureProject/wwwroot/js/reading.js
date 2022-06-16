@@ -2,11 +2,11 @@
 let prev = document.getElementById("prev")
 let curr = document.getElementById("curr")
 let next = document.getElementById("next")
-//let book_id = document.getElementById("book_id")
-//let bookId = book_id.innerHTML
-//book_id.innerHTML = ""
+let book_id = document.getElementById("book_id")
+let bookId = book_id.innerHTML
+book_id.innerHTML = ""
 let book_text = document.getElementById("book_text")
-value = book_text.innerHTML
+value = ""
 book_text.InnerHTML = ""
 let readingSpeed = 0
 var lines = getLines(value)
