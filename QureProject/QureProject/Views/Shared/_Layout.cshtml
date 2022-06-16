@@ -1,7 +1,4 @@
-﻿@using Microsoft.AspNetCore.Http
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
-@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
-@{
+﻿@{
     string? theme;
     Html.Raw(theme = HttpContextAccessor.HttpContext?.Request.Cookies["theme"]);
 }
@@ -47,6 +44,7 @@
     <script src="~/js/main.js"></script>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/reading.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

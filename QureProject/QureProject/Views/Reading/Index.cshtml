@@ -1,11 +1,9 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Назва книги";
     ViewData["Name"]  = "Назва книги";
 }
-
+<p id="book_id" style="display: none;">@ViewBag.Id</p>
+<p id="book_text" style="display: none;">@ViewBag.Text</p>
 <div class="readmenu__content">
 	<div class="container">
 		<div class="readmenu__row">
@@ -13,6 +11,7 @@
 			<div id="prev" class="readmenu__text_top"></div>
 			<div id="curr" class="readmenu__text_middle"></div>
 			<div id="next" class="readmenu__text_bottom"></div>
+    
 		</div>
 		<div class="readmenu__slider">
 			<output for="fader" id="speed">0</output>
@@ -21,7 +20,4 @@
 		<div class="readmenu__instruction">швидкість тексту</div>
 		</div>
 	</div>
-    
 </div>
-
-<script src="~/js/reading.js"></script>
