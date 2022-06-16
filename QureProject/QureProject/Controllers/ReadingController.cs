@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers {
 			//if (Request.Cookies[cookieName] is null) {
 			//	Response.Cookies.Append(cookieName, _read._book.Text);
 			//}
-			ViewBag.Text = System.IO.File.ReadAllText($"../books/{id}.txt");
+			//ViewBag.Text = System.IO.File.ReadAllText($"../books/{id}.txt");
 
 			return View();
 		}
