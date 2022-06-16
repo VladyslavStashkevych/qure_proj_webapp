@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QureProject", "QureProject\QureProject.csproj", "{C008F02B-9F11-44F6-97A2-C833C8B50BCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QureProj_Tests", "QureProj_Tests\QureProj_Tests.csproj", "{303877C6-9F67-4419-82EC-47882EEA2D16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C008F02B-9F11-44F6-97A2-C833C8B50BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C008F02B-9F11-44F6-97A2-C833C8B50BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C008F02B-9F11-44F6-97A2-C833C8B50BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303877C6-9F67-4419-82EC-47882EEA2D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303877C6-9F67-4419-82EC-47882EEA2D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303877C6-9F67-4419-82EC-47882EEA2D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303877C6-9F67-4419-82EC-47882EEA2D16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

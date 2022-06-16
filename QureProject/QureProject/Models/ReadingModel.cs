@@ -18,7 +18,7 @@ namespace QureProject.Models {
 			this.SetId();
 		}
 		public void SetId() {
-			this.Id = Reads.AllReads.Count;
+			this.Id = Reads.AllReads.IndexOf(Reads.AllReads.LastOrDefault()) + 1;
 			Reads.AllReads.Add(this);
 		}
 		public void SwitchALine() {

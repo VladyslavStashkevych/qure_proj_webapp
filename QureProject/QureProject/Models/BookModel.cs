@@ -13,25 +13,18 @@ namespace QureProject.Models {
 			Lines = new List<string>();
 			Text = "ll";
 		}
+		public BookModel(string lines) {
+			Name = "Untitled";
+			Author = "Me";
+			Lines = lines.Split(' ').ToList();
+			Text = "ll";
+		}
 
 		public void AddLines(string lines) {
 			if (lines == null) {
 				throw new ArgumentNullException(lines);
 			}
-			string[] tmp = lines.Split(' ');
-			while (tmp is not null && tmp.Length > 0) {
-				bool lengthIsAppropriate = true;
-				string nextLine = "";
-				while (lengthIsAppropriate || nextLine is null) {
-					if ((nextLine + ' ' + tmp.FirstOrDefault()).Length > 16)
-						lengthIsAppropriate = false;
-					else {
-						nextLine += ' ' + tmp.FirstOrDefault();
-						tmp = tmp.Skip(1).ToArray();
-					}
-				}
-				Lines.Add(nextLine);
-			}
+			Lines = lines.Split(' ').ToList();
 		}
 	}
 }
