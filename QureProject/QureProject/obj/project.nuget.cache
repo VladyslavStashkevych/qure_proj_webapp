@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TlrqeRbzgYy33GmWKe/fmSXwN0QCdqrWS36AIxfNTslG7l1N6vyzqvJegUVjJFeBvEeOjfdnSMr5HEjXi6RKcw==",
+  "dgSpecHash": "9BUhFzUldBeaZP1UAGSvEpWqr7hy752sg7n3Hwmplh6Jal+eTFvYuoh3u0Hk+SP8ZGPgkPlv2HIM6O3MQZuYjg==",
   "success": true,
   "projectFilePath": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\QureProject.csproj",
   "expectedPackageFiles": [
@@ -69,6 +69,7 @@
     "C:\\Users\\serpe\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\serpe\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\serpe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\serpe\\.nuget\\packages\\node.js\\5.3.0\\node.js.5.3.0.nupkg.sha512",
     "C:\\Users\\serpe\\.nuget\\packages\\nuget.common\\5.11.0\\nuget.common.5.11.0.nupkg.sha512",
     "C:\\Users\\serpe\\.nuget\\packages\\nuget.configuration\\5.11.0\\nuget.configuration.5.11.0.nupkg.sha512",
     "C:\\Users\\serpe\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",
