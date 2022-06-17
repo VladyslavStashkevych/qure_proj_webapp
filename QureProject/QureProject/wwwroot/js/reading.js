@@ -74,12 +74,6 @@ function outputUpdate(speed) {
     }
 }
 
-window.onmousemove = function (e) {
-    if (!e) e = window.event;
-    if (e.spaceKey) { reading = true; change(); }
-}
-
-
 document.body.onkeyup = function (e) {
     if (e.key == " " ||
         e.code == "Space" ||
