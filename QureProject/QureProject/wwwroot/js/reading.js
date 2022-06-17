@@ -1,4 +1,4 @@
-﻿let value;
+let value;
 let prev = document.getElementById("prev")
 let curr = document.getElementById("curr")
 let next = document.getElementById("next")
@@ -33,8 +33,8 @@ function setScreen(ls) {
     lines.shift()
 }
 
-async function outputUpdate(speed) {
-    reading = false
+function outputUpdate(speed) {
+    readingSpeed = (speed * 7) / 100
     let output = document.querySelector("#speed")
     output.value = speed;
 
@@ -72,13 +72,44 @@ async function outputUpdate(speed) {
     if (output.value > 99) {
         output.style.left = speed * 3.6 - 47 + 'px';
     }
-    reading = true
-    change(speed)
 }
 
-async function change(speed) {
-    readingSpeed = 0
-    readingSpeed = (speed * 7) / 100
+window.onmousemove = function (e) {
+    if (!e) e = window.event;
+    if (e.spaceKey) { reading = true; change(); }
+}
+
+
+document.body.onkeyup = function (e) {
+    if (e.key == " " ||
+        e.code == "Space" ||
+        e.keyCode == 32
+    ) {
+        reading = false;
+    }
+}
+
+document.body.onkeydown = function (e) {
+    if ((e.key == " " ||
+        e.code == "Space" ||
+        e.keyCode == 32 ) && !reading
+    ) {
+        reading = true;
+        change();
+    }
+}
+document.body.onmouseup = function (e) {
+    reading = false;
+}
+
+document.body.onmousedown = function (e) {
+    if (!reading) {
+        reading = true;
+        change();
+    }
+}
+
+async function change() {
     if (typeof (lines[0]) === "undefined") {
         if (next.innerHTML != "" && next.innerHTML != "undefined") {
             prev.innerHTML = curr.innerHTML
@@ -96,7 +127,7 @@ async function change(speed) {
     }
 }
 
-function sleep(ms) {
+async function sleep(ms) {
     return new Promise(
         resolve => setTimeout(resolve, ms)
     );
