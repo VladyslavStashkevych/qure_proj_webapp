@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FFdIfWM0anu184mjydJpm0LODOBOhyMfG5ozrJyF1Vk=",
+  "Hash": "/MlesP9T0cJXKmoizTHNvlg5eqqLhikNUJSygZ5I9NM=",
   "Source": "QureProject",
   "BasePath": "_content/QureProject",
   "Mode": "Default",
@@ -202,23 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\dark-mode\\Vector.jpg"
-    },
-    {
-      "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\fileUpload.js",
-      "SourceId": "QureProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\",
-      "BasePath": "_content/QureProject",
-      "RelativePath": "js/fileUpload.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\fileUpload.js"
     },
     {
       "Identity": "D:\\Files\\univeersity\\PTW\\TeamProjects\\QureProject\\QureProject\\QureProject\\wwwroot\\js\\main.js",
