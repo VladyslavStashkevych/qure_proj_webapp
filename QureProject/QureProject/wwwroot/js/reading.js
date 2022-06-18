@@ -74,33 +74,15 @@ function outputUpdate(speed) {
     }
 }
 
-document.body.onkeyup = function (e) {
-    if (e.key == " " ||
-        e.code == "Space" ||
-        e.keyCode == 32
-    ) {
-        reading = false;
-    }
-}
-
-document.body.onkeydown = function (e) {
-    if ((e.key == " " ||
-        e.code == "Space" ||
-        e.keyCode == 32 ) && !reading
-    ) {
-        reading = true;
-        change();
-    }
-}
 document.body.onmouseup = function (e) {
-    reading = false;
-}
-
-document.body.onmousedown = function (e) {
     if (!reading) {
         reading = true;
         change();
     }
+}
+
+document.body.onmousedown = function (e) {
+    reading = false;
 }
 
 async function change() {
