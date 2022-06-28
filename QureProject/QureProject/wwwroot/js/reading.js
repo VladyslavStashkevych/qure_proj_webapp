@@ -74,8 +74,10 @@ function outputUpdate(speed) {
     }
 }
 
-document.body.onmouseup = function (e) {
+document.body.onmouseup = async function (e) {
     if (!reading) {
+        reading = false
+        await sleep(1000 / readingSpeed)
         reading = true;
         change();
     }
@@ -92,14 +94,14 @@ async function change() {
             curr.innerHTML = next.innerHTML
             next.innerHTML = ""
         }
-        return;
     }
-    while (typeof (lines[0]) != "undefined" && readingSpeed != 0 && reading) {
+    else if (typeof (lines[0]) != "undefined" && readingSpeed != 0 && reading) {
         prev.innerHTML = curr.innerHTML
         curr.innerHTML = next.innerHTML
         next.innerHTML = lines[0]
         await sleep(1000 / readingSpeed)
         lines.shift()
+        change()
     }
 }
 
